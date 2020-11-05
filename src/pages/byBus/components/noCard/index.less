@@ -1,0 +1,141 @@
+.content {
+  padding: 0 24vw/7.5;
+  box-sizing: border-box;
+}
+.appWidAll{
+  padding-left: 0;
+  padding-right: 0;
+}
+.appTitle{
+  font-size: 32vw/7.5;
+  height: 45vw/7.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before,&:after{
+    content: '—';
+    font-size: 32vw/7.5;
+    color: #E3E3E3;
+    display: block;
+    padding: 0 12vw/7.5;
+  }
+}
+.getCardContent{
+  // padding-top: 240vw/7.5 !important;
+  position: relative;
+  z-index: 5;
+  margin-top: -110vw/7.5 !important;
+  padding-top: 220vw/7.5 !important;
+  padding-bottom: 30vw/7.5 !important;
+}
+
+.cardWithAnimation {
+  // transform: translateY(-300vw/7.5);
+  padding-top: 32vw/7.5 !important;
+  margin-top: -122vw/7.5 !important;
+}
+
+.discountBor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32vw/7.5 0 34vw/7.5;
+}
+.discount{
+  height: 36vw/7.5;
+  border-radius: 36vw/7.5;
+  background: #FFF5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 24vw/7.5;
+  img{
+    display: block;
+    border-radius: 36vw/7.5;
+    // margin-right: 8vw/7.5;
+    // width: 74vw/7.5;
+    height: 36vw/7.5;
+  }
+  .discountText{
+    font-size: 22vw/7.5;
+    color: #FF401A;
+  }
+  .discountLine{
+    width: 1vw/7.5;
+    height: 18vw/7.5;
+    font-size: 0vw/7.5;
+    overflow: hidden;
+    background: #979797;
+    margin: 0 12vw/7.5;
+  }
+}
+.agreement{
+  font-size: 24vw/7.5;
+  line-height: 40vw/7.5;
+  text-align: left;
+  margin-top: 16vw/7.5;
+  color: #999;
+}
+.initTop{
+  position: absolute;
+  left: 24vw/7.5;
+  top: 0;
+  height: 592vw/7.5;
+  display: flex;
+  right: 24vw/7.5;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 114vw/7.5;
+  box-sizing: border-box;
+}
+.tips{
+  height: 102vw/7.5;
+  border-top: #d8d8d8 solid 1vw/7.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 24vw/7.5 0 100vw/7.5;
+}
+.topsIcon{
+  width: 50vw/7.5;
+  height: 50vw/7.5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.tipsText{
+  font-size: 28vw/7.5;
+  max-width: 550vw/7.5;
+  overflow: hidden;
+  white-space: nowrap;
+  &::before{
+    content: '';
+    display: block;
+    height: 40vw/7.5;
+    width: 1vw/7.5;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    background: #d8d8d8;
+    position: absolute;
+    left: 78vw/7.5;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+.tipsMore{
+  width: 14vw/7.5;
+  height: 14vw/7.5;
+  position: absolute;
+  right: 2vw/7.5;
+  top: 50%;
+  transform: translate(0, -50%) rotate(45deg);
+  border-top: #BABABA solid 2vw/7.5;
+  border-right: #BABABA solid 2vw/7.5;
+}
+.agreeButton{
+  margin-top: 30vw/7.5;
+}

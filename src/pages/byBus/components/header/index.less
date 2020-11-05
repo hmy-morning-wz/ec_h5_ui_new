@@ -1,0 +1,208 @@
+.container {
+  padding-top: 114vw/7.5;
+  box-sizing: border-box;
+  text-align: center;
+  // background: url(../../../../assets/back.png) 0 0 no-repeat;
+  background: url("https://images.allcitygo.com/20200423144559008FL767d.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 515vw/7.5;
+}
+
+.containerAnimation {
+  padding-top: 0vw/7.5;
+  height: 701vw/7.5;
+  overflow: hidden;
+  background: none;
+  // background: linear-gradient(to bottom, rgba(32, 93, 187, 1) 570vw/7.5, #ffffff 655vw/7.5);
+  // background: linear-gradient(to top, rgba(54,122,216,0.00) 3%, #F5F5F5 11%, #F5F5F5 15%);
+}
+
+.mask {
+  width: 100%;
+  height: 209vw/7.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1) 38%, #F5F5F5);
+}
+
+.energy {
+  width: 336vw/7.5;
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.cardWrapper {
+  width: 100%;
+  // margin-top: 28vw/7.5;
+  padding: 0 56vw/7.5;
+  transition: all .9s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 190vw/7.5;
+  z-index: 10;
+  transform-origin: left bottom;
+}
+
+.cardWrapperAnimation {
+  position: absolute;
+  left: 24vw/7.5;
+  width: 171vw/7.5;
+  padding: 0 0;
+  top: 450vw/7.5;
+}
+
+.cardWrapperAnimation .card {  
+  // border-radius: 6vw/7.5 !important;
+}
+
+.card {
+  width: 100%;
+  display: block;
+  border-radius: 12vw/7.5;
+  box-sizing: border-box;
+}
+
+.animation {
+  width: 100%;
+  // height: 569vw/7.5;
+  height: 701vw/7.5;
+  overflow: hidden;
+  position: relative;
+}
+
+.headerBackgound {
+  @bgw: 1200vw/7.5;
+  @bgh: @bgw * 0.8;
+
+  position: absolute;
+  top: 0;
+  width: @bgw;
+  height: @bgh;
+  background-repeat: no-repeat;
+  transform-origin: left top;
+  transition: background-position 2s ease-in-out;
+  background-position: -250vw/7.5 -200vw/7.5;
+  background-size: 100% 100%;
+}
+.headerBackgoundAnimation {
+  background-position: -367vw/7.5 -90vw/7.5;
+}
+
+.words {
+  position: absolute;
+  left: 360vw/7.5;
+  top: 235vw/7.5;
+  width: 150vw/7.5;
+  visibility: hidden;
+  opacity: 0;
+}
+.wordsAnimation {
+  animation: fade-in 0.37s ease-in-out 3.6s;
+  animation-fill-mode: forwards;
+}
+
+.light {
+  position: absolute;
+  left: 418vw/7.5;
+  top: 293vw/7.5;
+  width: 150vw/7.5;
+  visibility: hidden;
+  opacity: 0;
+}
+.lightAnimation {
+  animation: fade-in 0.57s ease-in-out 3s, fade-out 1.27s ease-in-out 3.6s;
+  animation-fill-mode: forwards,forwards;
+}
+
+.codes {
+  position: absolute;
+  left: 100%;
+  top: 238vw/7.5;
+  transform-origin: left top;
+  width: 380vw/7.5;
+  z-index: 10;
+}
+.codesAnimation {
+  animation: codes-in 1.5s linear 1.05s, fade-out 0.1s ease-in-out 2.75s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.hands {
+  position: absolute;
+  left: 100%;
+  top: 238vw/7.5;
+  transform-origin: left top;
+  width: 380vw/7.5;
+  z-index: 10;
+}
+.handsAnimation {
+  animation: hands-in 1.2s ease-in-out 2.75s, hands-out 1.5s ease-in-out 3.75s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.repeat {
+  width: 172vw/7.5;
+  position: absolute;
+  right: 24vw/7.5;
+  bottom: 142vw/7.5;
+  z-index: 9;
+}
+.noCardHeight{
+  height: 24vw/7.5;
+  background: #1677FF;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+@keyframes codes-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-70%, 30vw/7.5, 0);
+  }
+}
+@keyframes hands-in {
+  from {
+    transform: translate3d(-70%, 30vw/7.5, 0);
+  }
+  to {
+    transform: translate3d(-80%, 30vw/7.5, 0);
+  }
+}
+@keyframes hands-out {
+  from {
+    opacity: 1;
+    transform: translate3d(-80%, 30vw/7.5, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(169vw/7.5, 0, 0);
+  }
+}

@@ -1,0 +1,38 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #F5F5F5;
+}
+a{
+  text-decoration:none;
+  color: #108EE9;
+}
+a:hover{
+  text-decoration: none;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.appBlock{
+  background: #fff;
+  border-radius: 2.1333vw;
+  padding: 4.2666vw 4.2666vw 0;
+  box-shadow:0 0 2.6666vw rgba(0, 0, 0, 0.1);
+  margin-top: 3.2vw;
+}
+.appWidAll{
+  padding-left: 0;
+  padding-right: 0;
+}

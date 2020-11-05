@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover,width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="index.css?v=1.0" />
+</head>
+<body>
+
+<div id="root"></div>
+<script src="https://a.alipayobjects.com/g/h5-lib/alipayjsapi/3.0.6/alipayjsapi.inc.min.js"></script>
+<script type="text/javascript" src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+<script>
+  FastClick.attach(document.body);
+</script>
+<script>
+  window.ebusConfig = {
+    "newUser": true,
+    "page": 'card'
+  };
+  ap.allowPullDownRefresh(false);
+  // AlipayJSBridge.call('setTransparentTitle', {
+  //   transparentTitle: 'auto'
+  // })
+</script>
+<script type="text/javascript" src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+<script>
+  window._to = {
+    server: ['https://webtrack.allcitygo.com:8088/event/upload'],
+    appId: '6060EBUSUINEW',
+    workspaceId: 'default',
+    appName:'领卡页新',
+    //user_id: null, //选填
+    autoExpo: true
+  //选填 h5version: '0.1.1.1' //选填
+  };
+</script>
+<script src="https://images.allcitygo.com/js/tracker/bundle_tracker_1.0.7_20190902_c27ba126.js"></script>
+<script src="/js/config/ebus/330000/config.js"> </script>
+<script src="/js/config/ebus/330000/faq.js"></script>
+<script src="/js/config/ebus/330000/lines.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
